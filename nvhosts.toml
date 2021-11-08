@@ -34,3 +34,5 @@ Cache-Control = "public, max-age=31536000, immutable"
 for = "manifest.webmanifest"
 [sites.headers.values]
 Content-Type = "application/manifest+json; charset=utf-8"
+
+[[sites.redirects]]
