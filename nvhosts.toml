@@ -6,7 +6,6 @@ for = '/*'
 [sites.headers.values]
 Cache-Control = 'public'
 Referrer-Policy = 'strict-origin-when-cross-origin'
-Referrer-Policy = "strict-origin-when-cross-origin"
 Strict-Transport-Security = 'max-age=31536000; includeSubDomains; preload'
 
 [[sites.headers]]
@@ -17,7 +16,7 @@ Content-Security-Policy = "default-src 'self'"
 
 [[sites.headers]]
 for = "*.css"
-[site.headers.values]
+[sites.headers.values]
 Cache-Control = "public, max-age=31536000, immutable"
 
 [[sites.headers]]
