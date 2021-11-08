@@ -36,3 +36,6 @@ for = "manifest.webmanifest"
 Content-Type = "application/manifest+json; charset=utf-8"
 
 [[sites.redirects]]
+from = '/example'
+to = 'http://example.com'
+status_code = 302
