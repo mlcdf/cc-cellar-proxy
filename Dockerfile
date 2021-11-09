@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.21.3
 
 RUN mkdir /etc/nginx/sites-available \
     && ln -sr /etc/nginx/sites-available /etc/nginx/sites-enabled
