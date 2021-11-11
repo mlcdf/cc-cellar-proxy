@@ -1,7 +1,8 @@
 FROM nginx:1.21.3
 
-RUN mkdir /etc/nginx/sites-available \
-    && ln -sr /etc/nginx/sites-available /etc/nginx/sites-enabled
+RUN mkdir /etc/nginx/sites-available && \
+    ln -sr /etc/nginx/sites-available /etc/nginx/sites-enabled && \
+    > /etc/nginx/conf.d/default.conf
 
 COPY conf/ /etc/nginx/
 COPY nvhosts.toml .
